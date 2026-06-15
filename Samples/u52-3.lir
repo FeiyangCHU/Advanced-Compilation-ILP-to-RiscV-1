@@ -1,0 +1,35 @@
+label L_str_0
+ "true"
+label L_str_1
+ "false"
+label main
+move temp t1 const 5 
+label L1
+cjump lt temp t1 const 42 name L4 name L7 
+label L7
+jump name L5 
+label L4
+move temp t2 const 1 
+jump name L6 
+label L5
+move temp t2 const 0 
+label L6
+cjump eq temp t2 const 0 name L3 name L2 
+label L2
+move temp t1 binop add temp t1 const 1 
+move temp t3 temp t1 
+sxp
+  temp t3
+jump name L1 
+label L3
+sxp
+  const 0
+move temp t4 temp t1 
+move temp t0 temp t4 
+move temp t5 call name string_of_int int temp t0 call end 
+move temp t6 temp t5 
+sxp
+  call name print int temp t6 call end
+sxp
+  const 0
+label end

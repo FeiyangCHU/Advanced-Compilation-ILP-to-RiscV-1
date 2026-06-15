@@ -1,0 +1,4 @@
+label main
+sxp
+  const 34
+label end

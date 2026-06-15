@@ -1,0 +1,6 @@
+label main
+move temp t1 const 51 
+move temp t2 const 6 
+sxp
+  binop add temp t1 temp t2
+label end

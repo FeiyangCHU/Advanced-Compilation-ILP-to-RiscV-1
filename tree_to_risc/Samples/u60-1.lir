@@ -1,0 +1,8 @@
+label L_str_0
+ "INT"
+label main
+sxp
+  binop add const 2 const 2
+sxp
+  name L_str_0
+label end

@@ -1,0 +1,15 @@
+/* == High Level Intermediate representation. == */
+/* String Litterals */
+label L_str_0 "FLOAT"
+
+/* Function Definitions */
+
+/* Main */
+# Routine main
+label main
+sxp
+  eseq 
+    sxp
+      constF 5.0      
+    name L_str_0
+label end

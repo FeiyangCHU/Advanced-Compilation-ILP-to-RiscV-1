@@ -1,0 +1,10 @@
+label L_str_0
+ "debut"
+label L_str_1
+ "fin"
+label main
+move temp t0 name L_str_0 
+move temp t1 name L_str_1 
+sxp
+  call name concat int temp t0 int temp t1 call end
+label end

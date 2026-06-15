@@ -1,0 +1,21 @@
+label L_str_0
+ "true"
+label L_str_1
+ "false"
+label L1
+move temp t0 const 2 
+move temp f2 callF name float_of_int int temp t0 call end 
+move temp f1 binop mulF temp f2 temp fi0 
+move temp fv temp f1 
+label end
+label main
+move temp f3 constF 1.25 
+move temp f4 callF name L1 float temp f3 call end 
+move temp f5 temp f4 
+move temp t6 call name string_of_float float temp f5 call end 
+move temp t7 temp t6 
+sxp
+  call name print int temp t7 call end
+sxp
+  const 0
+label end

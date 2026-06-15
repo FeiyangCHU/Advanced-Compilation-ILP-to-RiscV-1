@@ -1,0 +1,29 @@
+/* == High Level Intermediate representation. == */
+/* String Litterals */
+label L_str_1 "a"
+label L_str_0 "Pourquoi ce message ne s'affiche pas? Il s'agit probablement d'une erreur de resolution. Pensez aux effets de bord!"
+
+/* Function Definitions */
+
+/* Main */
+# Routine main
+label main
+sxp
+  eseq 
+    seq 
+      sxp
+        eseq 
+          sxp
+            eseq
+              sxp
+                call
+                  name print
+                  name L_str_0                  
+                call end
+              const 0            
+          name L_str_1        
+      sxp
+        const 1        
+    seq end
+    const 0
+label end

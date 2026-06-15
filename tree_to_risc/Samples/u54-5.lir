@@ -1,0 +1,28 @@
+label L_str_0
+ "cou"
+label L1
+move temp rv binop add temp i0 temp i0 
+label end
+label L2
+move temp t0 temp i0 
+move temp t1 temp i0 
+move temp rv call name concat int temp t0 int temp t1 call end 
+label end
+label main
+move temp t7 name L_str_0 
+move temp t8 call name L2 int temp t7 call end 
+move temp t9 temp t8 
+sxp
+  call name print int temp t9 call end
+sxp
+  const 0
+move temp t2 const 2 
+move temp t3 call name L1 int temp t2 call end 
+move temp t4 temp t3 
+move temp t5 call name string_of_int int temp t4 call end 
+move temp t6 temp t5 
+sxp
+  call name print int temp t6 call end
+sxp
+  const 0
+label end

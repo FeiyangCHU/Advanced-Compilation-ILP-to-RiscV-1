@@ -1,0 +1,66 @@
+label L_str_0
+ "true"
+label L_str_1
+ "false"
+label main
+move temp t1 const 5 
+label L1
+cjump lt temp t1 const 53 name L4 name L13 
+label L13
+jump name L5 
+label L4
+move temp t3 const 1 
+jump name L6 
+label L5
+move temp t3 const 0 
+label L6
+move temp t2 temp t3 
+cjump eq temp t2 const 0 name L3 name L2 
+label L2
+move temp t0 temp t1 
+move temp t9 call name string_of_int int temp t0 call end 
+move temp t10 temp t9 
+sxp
+  call name print int temp t10 call end
+sxp
+  const 0
+move temp t1 binop mul const 2 temp t1 
+sxp
+  temp t1
+label L7
+cjump gt temp t1 const 53 name L10 name L14 
+label L14
+jump name L11 
+label L10
+move temp t6 const 1 
+jump name L12 
+label L11
+move temp t6 const 0 
+label L12
+move temp t5 temp t6 
+cjump eq temp t5 const 0 name L9 name L8 
+label L8
+move temp t11 temp t1 
+move temp t12 call name string_of_int int temp t11 call end 
+move temp t13 temp t12 
+sxp
+  call name print int temp t13 call end
+sxp
+  const 0
+move temp t1 binop sub temp t1 const 3 
+move temp t7 temp t1 
+sxp
+  temp t7
+jump name L7 
+label L9
+move temp t4 const 0 
+sxp
+  temp t4
+jump name L1 
+label L3
+sxp
+  const 0
+move temp t8 temp t1 
+sxp
+  temp t8
+label end

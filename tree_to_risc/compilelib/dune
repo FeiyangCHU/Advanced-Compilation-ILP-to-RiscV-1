@@ -1,0 +1,6 @@
+(include_subdirs unqualified)
+
+(library
+ (name compilelib)
+ (flags (:standard -w -27-39))
+ (libraries treelib str))

@@ -1,0 +1,14 @@
+/* == High Level Intermediate representation. == */
+/* String Litterals */
+
+/* Function Definitions */
+
+/* Main */
+# Routine main
+label main
+sxp
+  binop
+  subF  
+  constF 3.1415926535  
+  constF 0.1415926535
+label end

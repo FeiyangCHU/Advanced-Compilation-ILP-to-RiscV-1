@@ -1,0 +1,12 @@
+label L_str_0
+ "foobar"
+label main
+sxp
+  const 1
+sxp
+  constF 2.2
+sxp
+  const 1
+sxp
+  name L_str_0
+label end

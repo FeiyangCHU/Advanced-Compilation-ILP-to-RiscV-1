@@ -1,0 +1,4 @@
+label main
+sxp
+  binop xor const 1 const 1
+label end

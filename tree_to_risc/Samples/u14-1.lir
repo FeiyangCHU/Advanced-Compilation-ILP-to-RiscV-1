@@ -1,0 +1,4 @@
+label main
+sxp
+  binop mod const 33 const 5
+label end

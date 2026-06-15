@@ -1,0 +1,19 @@
+label L_str_0
+ "*"
+label main
+cjump ge const 1 const 0 name L1 name L4 
+label L4
+jump name L2 
+label L1
+move temp t1 const 1 
+jump name L3 
+label L2
+move temp t1 const 0 
+label L3
+move temp t0 temp t1 
+move temp t2 call name string_of_int int temp t0 call end 
+move temp t3 temp t2 
+move temp t4 name L_str_0 
+sxp
+  call name concat int temp t3 int temp t4 call end
+label end

@@ -1,0 +1,33 @@
+/* == High Level Intermediate representation. == */
+/* String Litterals */
+label L_str_2 "E"
+label L_str_1 "BOOL"
+label L_str_0 "GEORGE "
+
+/* Function Definitions */
+
+/* Main */
+# Routine main
+label main
+sxp
+  eseq
+    sxp
+      call
+        name print
+        call
+          name concat
+          eseq 
+            sxp
+              eseq
+                sxp
+                  call
+                    name print
+                    name L_str_0                    
+                  call end
+                const 0              
+            name L_str_1          
+          name L_str_2          
+        call end        
+      call end
+    const 0
+label end

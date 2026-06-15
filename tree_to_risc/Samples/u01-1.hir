@@ -1,0 +1,11 @@
+/* == High Level Intermediate representation. == */
+/* String Litterals */
+
+/* Function Definitions */
+
+/* Main */
+# Routine main
+label main
+sxp
+  const 34
+label end

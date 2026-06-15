@@ -1,0 +1,5 @@
+function one(n)(
+  if (n == 0) then 1 else one(n-1)
+)
+
+one(5)

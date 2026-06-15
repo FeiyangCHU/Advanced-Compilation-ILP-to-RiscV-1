@@ -1,0 +1,216 @@
+/* == High Level Intermediate representation. == */
+/* String Litterals */
+label L_str_0 "a"
+label L_str_1 "b"
+label L_str_3 "false"
+label L_str_2 "true"
+
+/* Function Definitions */
+
+/* Main */
+# Routine main
+label main
+sxp
+  eseq 
+    seq 
+      sxp
+        eseq
+          sxp
+            call
+              name print
+              eseq
+                seq
+                  cjump
+                    ne
+                    eseq
+                      seq
+                        cjump
+                          lt
+                          call
+                          name strcmp
+                          name L_str_0                          
+                          name L_str_1                          call end
+                          const 0
+                          name L4
+                          name L5
+                        label L4
+                        move
+                        temp t2
+                        const 1
+                        jump name L6
+                        label L5
+                        move
+                        temp t2
+                        const 0
+                        label L6
+                      seq end
+                      temp t2
+                    
+                    const 0
+                    name L1
+                    name L2
+                  label L1
+                  move
+                  temp t1
+                  name L_str_2                  
+                  jump name L3
+                  label L2
+                  move
+                  temp t1
+                  name L_str_3                  
+                  label L3
+                seq end
+                temp t1              
+            call end
+          const 0        
+      sxp
+        eseq
+          sxp
+            call
+              name print
+              eseq
+                seq
+                  cjump
+                    ne
+                    eseq
+                      seq
+                        cjump
+                          le
+                          call
+                          name strcmp
+                          name L_str_0                          
+                          name L_str_1                          call end
+                          const 0
+                          name L10
+                          name L11
+                        label L10
+                        move
+                        temp t4
+                        const 1
+                        jump name L12
+                        label L11
+                        move
+                        temp t4
+                        const 0
+                        label L12
+                      seq end
+                      temp t4
+                    
+                    const 0
+                    name L7
+                    name L8
+                  label L7
+                  move
+                  temp t3
+                  name L_str_2                  
+                  jump name L9
+                  label L8
+                  move
+                  temp t3
+                  name L_str_3                  
+                  label L9
+                seq end
+                temp t3              
+            call end
+          const 0        
+      sxp
+        eseq
+          sxp
+            call
+              name print
+              eseq
+                seq
+                  cjump
+                    ne
+                    eseq
+                      seq
+                        cjump
+                          gt
+                          call
+                          name strcmp
+                          name L_str_0                          
+                          name L_str_1                          call end
+                          const 0
+                          name L16
+                          name L17
+                        label L16
+                        move
+                        temp t6
+                        const 1
+                        jump name L18
+                        label L17
+                        move
+                        temp t6
+                        const 0
+                        label L18
+                      seq end
+                      temp t6
+                    
+                    const 0
+                    name L13
+                    name L14
+                  label L13
+                  move
+                  temp t5
+                  name L_str_2                  
+                  jump name L15
+                  label L14
+                  move
+                  temp t5
+                  name L_str_3                  
+                  label L15
+                seq end
+                temp t5              
+            call end
+          const 0        
+    seq end
+    eseq
+      sxp
+        call
+          name print
+          eseq
+            seq
+              cjump
+                ne
+                eseq
+                  seq
+                    cjump
+                      ge
+                      call
+                      name strcmp
+                      name L_str_0                      
+                      name L_str_1                      call end
+                      const 0
+                      name L22
+                      name L23
+                    label L22
+                    move
+                    temp t8
+                    const 1
+                    jump name L24
+                    label L23
+                    move
+                    temp t8
+                    const 0
+                    label L24
+                  seq end
+                  temp t8
+                
+                const 0
+                name L19
+                name L20
+              label L19
+              move
+              temp t7
+              name L_str_2              
+              jump name L21
+              label L20
+              move
+              temp t7
+              name L_str_3              
+              label L21
+            seq end
+            temp t7          
+        call end
+      const 0
+label end

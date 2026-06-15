@@ -1,0 +1,17 @@
+label L_str_0
+ "foobar"
+label L_str_1
+ "true"
+label L_str_2
+ "false"
+label main
+sxp
+  const 1
+sxp
+  constF 2.2
+sxp
+  const 1
+move temp t1 name L_str_0 
+sxp
+  temp t1
+label end

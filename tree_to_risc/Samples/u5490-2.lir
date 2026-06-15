@@ -1,0 +1,8 @@
+label L1
+move temp rv binop div temp i0 const 2 
+label end
+label main
+move temp t0 binop mul const 2 const 5490 
+sxp
+  call name L1 int temp t0 call end
+label end

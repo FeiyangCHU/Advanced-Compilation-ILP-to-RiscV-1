@@ -1,0 +1,8 @@
+label L_str_0
+ "true"
+label L_str_1
+ "false"
+label main
+sxp
+  const 34
+label end

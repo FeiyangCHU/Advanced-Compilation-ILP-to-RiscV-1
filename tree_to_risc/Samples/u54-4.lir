@@ -1,0 +1,16 @@
+label L1
+move temp t0 const 2 
+move temp f1 callF name float_of_int int temp t0 call end 
+move temp fv binop mulF temp f1 temp fi0 
+label end
+label main
+move temp f2 constF 1.25 
+move temp f3 callF name L1 float temp f2 call end 
+move temp f4 temp f3 
+move temp t5 call name string_of_float float temp f4 call end 
+move temp t6 temp t5 
+sxp
+  call name print int temp t6 call end
+sxp
+  const 0
+label end

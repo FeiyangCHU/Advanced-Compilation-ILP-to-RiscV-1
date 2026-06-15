@@ -1,0 +1,7 @@
+function deuxfois(x)
+(
+  x + x
+);
+
+print(deuxfois("cou"));
+print(deuxfois(2))

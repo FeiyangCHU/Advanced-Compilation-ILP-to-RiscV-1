@@ -1,0 +1,93 @@
+label L_str_0
+ "true"
+label L_str_1
+ "false"
+label L1
+cjump eq temp i0 const 0 name L6 name L30 
+label L30
+jump name L7 
+label L6
+move temp t3 const 1 
+jump name L8 
+label L7
+move temp t3 const 0 
+label L8
+cjump eq temp t3 const 0 name L4 name L3 
+label L3
+move temp t2 const 1 
+jump name L5 
+label L4
+cjump eq temp i0 const 1 name L12 name L31 
+label L31
+jump name L13 
+label L12
+move temp t5 const 1 
+jump name L14 
+label L13
+move temp t5 const 0 
+label L14
+cjump eq temp t5 const 0 name L10 name L9 
+label L9
+move temp t4 const 0 
+jump name L11 
+label L10
+move temp t0 binop sub temp i0 const 1 
+move temp t4 call name L2 int temp t0 call end 
+label L11
+move temp t2 temp t4 
+label L5
+move temp t1 temp t2 
+move temp rv temp t1 
+label end
+label L2
+cjump eq temp i0 const 0 name L18 name L32 
+label L32
+jump name L19 
+label L18
+move temp t8 const 1 
+jump name L20 
+label L19
+move temp t8 const 0 
+label L20
+cjump eq temp t8 const 0 name L16 name L15 
+label L15
+move temp t7 const 0 
+jump name L17 
+label L16
+cjump eq temp i0 const 1 name L24 name L33 
+label L33
+jump name L25 
+label L24
+move temp t10 const 1 
+jump name L26 
+label L25
+move temp t10 const 0 
+label L26
+cjump eq temp t10 const 0 name L22 name L21 
+label L21
+move temp t9 const 1 
+jump name L23 
+label L22
+move temp t12 binop sub temp i0 const 1 
+move temp t9 call name L1 int temp t12 call end 
+label L23
+move temp t7 temp t9 
+label L17
+move temp t6 temp t7 
+move temp rv temp t6 
+label end
+label main
+move temp t13 const 56 
+move temp t14 call name L2 int temp t13 call end 
+cjump eq temp t14 const 0 name L27 name L34 
+label L34
+jump name L28 
+label L27
+move temp t11 const 1 
+jump name L29 
+label L28
+move temp t11 const 0 
+label L29
+sxp
+  temp t11
+label end

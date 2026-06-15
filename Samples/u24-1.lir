@@ -1,0 +1,15 @@
+label L_str_0
+ "true"
+label L_str_1
+ "false"
+label main
+cjump eq const 1 const 0 name L2 name L1 
+label L1
+move temp t1 const 1 
+jump name L3 
+label L2
+move temp t1 const 2 
+label L3
+sxp
+  temp t1
+label end

@@ -1,0 +1,8 @@
+label main
+move temp t1 const 50 
+move temp t1 const 500 
+sxp
+  temp t1
+sxp
+  temp t1
+label end

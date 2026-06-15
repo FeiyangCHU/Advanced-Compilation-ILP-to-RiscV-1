@@ -1,0 +1,21 @@
+label L_str_2
+ "E"
+label L_str_1
+ "BOOL"
+label L_str_0
+ "GEORGE "
+label main
+move temp t0 name L_str_0 
+sxp
+  call name print int temp t0 call end
+sxp
+  const 0
+move temp t1 name L_str_1 
+move temp t2 name L_str_2 
+move temp t3 call name concat int temp t1 int temp t2 call end 
+move temp t4 temp t3 
+sxp
+  call name print int temp t4 call end
+sxp
+  const 0
+label end

@@ -1,0 +1,27 @@
+label L_str_0
+ "0"
+label L_str_1
+ "true"
+label L_str_2
+ "false"
+label main
+sxp
+  name L_str_0
+sxp
+  const 0
+move temp t2 const 0 
+cjump ne temp t2 const 0 name L1 name L4 
+label L4
+jump name L2 
+label L1
+move temp t1 name L_str_1 
+jump name L3 
+label L2
+move temp t1 name L_str_2 
+label L3
+move temp t0 temp t1 
+sxp
+  call name print int temp t0 call end
+sxp
+  const 0
+label end

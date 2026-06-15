@@ -1,0 +1,9 @@
+label L_str_0
+ "foobar"
+label main
+move temp t1 const 33 
+sxp
+  name L_str_0
+sxp
+  binop add temp t1 const 22
+label end

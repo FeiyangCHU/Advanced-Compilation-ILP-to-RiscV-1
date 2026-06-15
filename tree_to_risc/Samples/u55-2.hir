@@ -1,0 +1,28 @@
+/* == High Level Intermediate representation. == */
+/* String Litterals */
+
+/* Function Definitions */
+/* function : dou_ble__int */
+# Routine: L1
+label L1
+  # Body
+  move
+  temp rv
+  binop
+  mul  
+  const 2  
+  temp i0  label end
+  
+  
+  /* Main */
+  # Routine main
+  label main
+  sxp
+    call
+      name L1
+      binop
+      add      
+      const 52      
+      const 3      
+    call end  
+label end

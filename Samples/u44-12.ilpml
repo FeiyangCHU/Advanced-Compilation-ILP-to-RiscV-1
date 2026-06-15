@@ -1,0 +1,1 @@
+(print("Pourquoi ce message ne s'affiche pas? Il s'agit probablement d'une erreur de resolution. Pensez aux effets de bord!");"a")==1

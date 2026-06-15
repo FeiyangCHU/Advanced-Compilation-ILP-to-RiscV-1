@@ -1,0 +1,12 @@
+label L_str_0
+ "true"
+label L_str_1
+ "false"
+label main
+move temp t1 const 11 
+move temp t2 const 22 
+move temp t3 binop add temp t1 temp t2 
+move temp t4 binop mul temp t1 temp t2 
+sxp
+  binop mul temp t3 temp t4
+label end

@@ -1,0 +1,23 @@
+label L_str_0
+ "Un, "
+label L_str_1
+ "deux et "
+label L_str_2
+ "trois."
+label main
+move temp t1 name L_str_0 
+sxp
+  call name print int temp t1 call end
+sxp
+  const 0
+move temp t2 name L_str_1 
+sxp
+  call name print int temp t2 call end
+sxp
+  const 0
+move temp t0 name L_str_2 
+sxp
+  call name print int temp t0 call end
+sxp
+  const 0
+label end

@@ -1,0 +1,13 @@
+label L_str_0
+ "true"
+label L_str_1
+ "false"
+label main
+move temp t0 binop add const 20 const 1 
+move temp t1 call name string_of_int int temp t0 call end 
+move temp t2 temp t1 
+sxp
+  call name print int temp t2 call end
+sxp
+  const 0
+label end

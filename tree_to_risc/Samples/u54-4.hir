@@ -1,0 +1,37 @@
+/* == High Level Intermediate representation. == */
+/* String Litterals */
+
+/* Function Definitions */
+/* function : deuxfois__float */
+# Routine: L1
+label L1
+  # Body
+  move
+  temp fv
+  binop
+  mulF  
+  callF
+    name float_of_int
+    const 2    
+  call end  
+  temp fi0  label end
+  
+  
+  /* Main */
+  # Routine main
+  label main
+  sxp
+    eseq
+      sxp
+        call
+          name print
+          call
+            name string_of_float
+            float             callF
+              name L1
+              float               constF 1.25              
+            call end            
+          call end          
+        call end
+      const 0  
+label end

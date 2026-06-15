@@ -1,0 +1,8 @@
+print(let x = 5 in
+(
+  while x < 42 do
+  (
+    x = x + 1
+  );
+  x
+))

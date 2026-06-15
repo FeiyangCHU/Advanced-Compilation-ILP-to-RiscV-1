@@ -1,0 +1,204 @@
+/* == High Level Intermediate representation. == */
+/* String Litterals */
+
+/* Function Definitions */
+/* function : even__int */
+# Routine: L1
+label L1
+  # Body
+  move
+  temp rv
+  eseq
+    seq
+      cjump
+        ne
+        eseq
+          seq
+            cjump
+              eq
+              temp i0              
+              const 0              
+              name L6
+              name L7
+            label L6
+            move
+            temp t2
+            const 1
+            jump name L8
+            label L7
+            move
+            temp t2
+            const 0
+            label L8
+          seq end
+          temp t2
+        
+        const 0
+        name L3
+        name L4
+      label L3
+      move
+      temp t1
+      const 1      
+      jump name L5
+      label L4
+      move
+      temp t1
+      eseq
+        seq
+          cjump
+            ne
+            eseq
+              seq
+                cjump
+                  eq
+                  temp i0                  
+                  const 1                  
+                  name L12
+                  name L13
+                label L12
+                move
+                temp t4
+                const 1
+                jump name L14
+                label L13
+                move
+                temp t4
+                const 0
+                label L14
+              seq end
+              temp t4
+            
+            const 0
+            name L9
+            name L10
+          label L9
+          move
+          temp t3
+          const 0          
+          jump name L11
+          label L10
+          move
+          temp t3
+          eseq 
+            sxp
+              call
+                name L2
+                binop
+                sub                
+                temp i0                
+                const 1                
+              call end              
+            const 1          
+          label L11
+        seq end
+        temp t3      
+      label L5
+    seq end
+    temp t1  label end
+  
+  /* function : odd__int */
+    # Routine: L2
+  label L2
+    # Body
+    move
+    temp rv
+    eseq
+      seq
+        cjump
+          ne
+          eseq
+            seq
+              cjump
+                eq
+                temp i0                
+                const 0                
+                name L18
+                name L19
+              label L18
+              move
+              temp t6
+              const 1
+              jump name L20
+              label L19
+              move
+              temp t6
+              const 0
+              label L20
+            seq end
+            temp t6
+          
+          const 0
+          name L15
+          name L16
+        label L15
+        move
+        temp t5
+        const 0        
+        jump name L17
+        label L16
+        move
+        temp t5
+        eseq
+          seq
+            cjump
+              ne
+              eseq
+                seq
+                  cjump
+                    eq
+                    temp i0                    
+                    const 1                    
+                    name L24
+                    name L25
+                  label L24
+                  move
+                  temp t8
+                  const 1
+                  jump name L26
+                  label L25
+                  move
+                  temp t8
+                  const 0
+                  label L26
+                seq end
+                temp t8
+              
+              const 0
+              name L21
+              name L22
+            label L21
+            move
+            temp t7
+            const 1            
+            jump name L23
+            label L22
+            move
+            temp t7
+            call
+              name L1
+              binop
+              sub              
+              temp i0              
+              const 1              
+            call end            
+            label L23
+          seq end
+          temp t7        
+        label L17
+      seq end
+      temp t5    label end
+    
+    
+    /* Main */
+    # Routine main
+    label main
+    sxp
+      binop
+        xor        
+        call
+          name L2
+          const 56          
+        call end        
+        const 1    
+label end

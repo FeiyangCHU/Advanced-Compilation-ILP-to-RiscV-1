@@ -1,0 +1,14 @@
+label L_str_1
+ "true"
+label L_str_2
+ "false"
+label L_str_0
+ "*"
+label main
+move temp t0 name L_str_0 
+move temp t1 const 2 
+move temp t2 call name string_of_int int temp t1 call end 
+move temp t3 temp t2 
+sxp
+  call name concat int temp t0 int temp t3 call end
+label end

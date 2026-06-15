@@ -1,0 +1,13 @@
+label L_str_0
+ "true"
+label L_str_1
+ "false"
+label main
+move temp t1 const 50 
+move temp t1 const 500 
+sxp
+  temp t1
+move temp t2 temp t1 
+sxp
+  temp t2
+label end

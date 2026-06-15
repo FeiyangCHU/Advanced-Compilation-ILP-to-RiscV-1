@@ -1,0 +1,4 @@
+label main
+sxp
+  constF 3.14
+label end

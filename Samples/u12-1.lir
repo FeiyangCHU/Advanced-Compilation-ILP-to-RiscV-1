@@ -1,0 +1,8 @@
+label L_str_0
+ "true"
+label L_str_1
+ "false"
+label main
+sxp
+  binop mul const 3 const 4
+label end

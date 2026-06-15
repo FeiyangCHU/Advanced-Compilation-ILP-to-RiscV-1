@@ -1,0 +1,4 @@
+out/*
+# Generated compiler outputs
+Samples/*.hir
+Samples/*.resolved

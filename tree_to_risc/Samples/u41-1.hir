@@ -1,0 +1,23 @@
+/* == High Level Intermediate representation. == */
+/* String Litterals */
+
+/* Function Definitions */
+
+/* Main */
+# Routine main
+label main
+sxp
+  eseq
+    sxp
+      call
+        name print
+        call
+          name string_of_int
+          binop
+          add          
+          const 20          
+          const 1          
+        call end        
+      call end
+    const 0
+label end

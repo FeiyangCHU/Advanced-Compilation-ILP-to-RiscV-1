@@ -1,0 +1,10 @@
+label L_str_0
+ "true"
+label L_str_1
+ "false"
+label main
+move temp t1 const 1 
+move temp t2 const 2 
+sxp
+  binop add temp t1 temp t2
+label end

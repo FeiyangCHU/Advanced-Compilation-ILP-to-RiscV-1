@@ -1,0 +1,54 @@
+/* == High Level Intermediate representation. == */
+/* String Litterals */
+
+/* Function Definitions */
+/* function : foo__int__int */
+# Routine: L1
+label L1
+  # Body
+  move
+  temp rv
+  binop
+  add  
+  temp i0  
+  temp i1  label end
+  
+  
+  /* Main */
+  # Routine main
+  label main
+  sxp
+    call
+      name L1
+      eseq
+        seq
+          cjump
+            ne
+            const 1            
+            const 0
+            name L2
+            name L3
+          label L2
+          move
+          temp t1
+          const 8          
+          jump name L4
+          label L3
+          move
+          temp t1
+          const 1          
+          label L4
+        seq end
+        temp t1      
+      eseq
+      seq
+      move
+        temp t2
+        const 8      
+      seq end
+      binop
+      mul      
+      temp t2      
+      temp t2      
+    call end  
+label end

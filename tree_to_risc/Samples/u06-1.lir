@@ -1,0 +1,6 @@
+label L_str_0
+ "Il dit \"Salut\"!"
+label main
+sxp
+  name L_str_0
+label end

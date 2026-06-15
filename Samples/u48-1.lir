@@ -1,0 +1,23 @@
+label L_str_1
+ "true"
+label L_str_2
+ "false"
+label L_str_0
+ "invisible"
+label main
+cjump eq const 1 const 0 name L2 name L1 
+label L1
+move temp t0 name L_str_0 
+sxp
+  call name print int temp t0 call end
+move temp t1 const 0 
+jump name L3 
+label L2
+move temp t1 const 0 
+label L3
+sxp
+  temp t1
+move temp t2 const 48 
+sxp
+  temp t2
+label end

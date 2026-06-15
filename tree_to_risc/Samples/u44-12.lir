@@ -1,0 +1,17 @@
+label L_str_1
+ "a"
+label L_str_0
+ "Pourquoi ce message ne s'affiche pas? Il s'agit probablement d'une erreur de resolution. Pensez aux effets de bord!"
+label main
+move temp t0 name L_str_0 
+sxp
+  call name print int temp t0 call end
+sxp
+  const 0
+sxp
+  name L_str_1
+sxp
+  const 1
+sxp
+  const 0
+label end

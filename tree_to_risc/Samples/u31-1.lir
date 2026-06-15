@@ -1,0 +1,9 @@
+label main
+move temp t1 const 22 
+move temp f2 constF 6.3 
+move temp f3 temp f2 
+move temp t0 temp t1 
+move temp f1 callF name float_of_int int temp t0 call end 
+sxp
+  binop addF temp f3 temp f1
+label end

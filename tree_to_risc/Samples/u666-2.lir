@@ -1,0 +1,29 @@
+label L1
+cjump eq temp i0 const 0 name L5 name L8 
+label L8
+jump name L6 
+label L5
+move temp t2 const 1 
+jump name L7 
+label L6
+move temp t2 const 0 
+label L7
+cjump ne temp t2 const 0 name L2 name L9 
+label L9
+jump name L3 
+label L2
+move temp t1 const 1 
+jump name L4 
+label L3
+move temp t5 temp i0 
+move temp t0 binop sub temp i0 const 1 
+move temp t3 call name L1 int temp t0 call end 
+move temp t1 binop mul temp t5 temp t3 
+label L4
+move temp rv temp t1 
+label end
+label main
+move temp t4 const 5 
+sxp
+  call name L1 int temp t4 call end
+label end

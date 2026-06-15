@@ -1,0 +1,17 @@
+label L1
+move temp rv binop mul const 2 temp i0 
+label end
+label L2
+move temp rv temp i1 
+label end
+label main
+move temp t1 const 11 
+move temp t1 binop add temp t1 const 1 
+move temp t0 temp t1 
+move temp t2 temp t1 
+move temp t3 call name L2 int temp t0 int temp t2 call end 
+move temp t4 temp t3 
+move temp t5 call name L1 int temp t4 call end 
+sxp
+  temp t5
+label end

@@ -1,0 +1,10 @@
+label L_str_0
+ "assignments have a return value!"
+label main
+move temp t1 name L_str_0 
+move temp t0 temp t1 
+sxp
+  call name print int temp t0 call end
+sxp
+  const 0
+label end

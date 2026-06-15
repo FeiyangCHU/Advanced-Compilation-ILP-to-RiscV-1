@@ -1,0 +1,2 @@
+let x = 1 in
+print (if x then type_of (x+"coucou") else 1.5)

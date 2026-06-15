@@ -1,0 +1,7 @@
+function deuxfois_plus_deux(x)
+(
+  let y = x + 1 in
+  2 * y
+);
+
+print(deuxfois_plus_deux(3))

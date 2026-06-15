@@ -1,0 +1,39 @@
+label L_str_1
+ "0"
+label L_str_2
+ "true"
+label L_str_3
+ "false"
+label L_str_0
+ "FUNCTION"
+label L1
+move temp t1 binop add temp i0 const 1 
+move temp rv temp t1 
+label end
+label L2
+move temp t0 temp i0 
+move temp t3 const 1 
+move temp t4 call name string_of_int int temp t3 call end 
+move temp t5 temp t4 
+move temp t2 call name concat int temp t0 int temp t5 call end 
+move temp rv temp t2 
+label end
+label main
+move temp t6 name L_str_0 
+move temp t7 const 2 
+move temp t8 call name L1 int temp t7 call end 
+move temp t9 temp t8 
+move temp t10 call name string_of_int int temp t9 call end 
+move temp t11 temp t10 
+move temp t12 call name concat int temp t6 int temp t11 call end 
+move temp t13 temp t12 
+move temp t14 name L_str_1 
+move temp t15 call name L2 int temp t14 call end 
+move temp t16 temp t15 
+move temp t17 call name concat int temp t13 int temp t16 call end 
+move temp t18 temp t17 
+sxp
+  call name print int temp t18 call end
+sxp
+  const 0
+label end

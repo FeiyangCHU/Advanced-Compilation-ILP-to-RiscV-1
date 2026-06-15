@@ -1,0 +1,10 @@
+label L_str_1
+ "true"
+label L_str_2
+ "false"
+label L_str_0
+ "Il dit \"Salut\"!"
+label main
+sxp
+  name L_str_0
+label end

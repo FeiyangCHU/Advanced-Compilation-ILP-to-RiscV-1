@@ -1,0 +1,15 @@
+label L_str_0
+ "test"
+label L_str_2
+ "true"
+label L_str_3
+ "false"
+label L_str_1
+ "STRING"
+label main
+sxp
+  name L_str_0
+move temp t1 name L_str_1 
+sxp
+  temp t1
+label end

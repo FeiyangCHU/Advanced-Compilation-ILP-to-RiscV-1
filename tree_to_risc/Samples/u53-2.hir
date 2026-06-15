@@ -1,0 +1,132 @@
+/* == High Level Intermediate representation. == */
+/* String Litterals */
+
+/* Function Definitions */
+
+/* Main */
+# Routine main
+label main
+sxp
+  eseq
+  seq
+  move
+    temp t1
+    const 5  
+  seq end
+  eseq 
+    sxp
+      eseq
+        seq
+          label L1
+          cjump
+            ne
+            eseq
+              seq
+                cjump
+                  lt
+                  temp t1                  
+                  const 53                  
+                  name L4
+                  name L5
+                label L4
+                move
+                temp t2
+                const 1
+                jump name L6
+                label L5
+                move
+                temp t2
+                const 0
+                label L6
+              seq end
+              temp t2
+            
+            const 0
+            name L2
+            name L3
+          label L2
+          sxp
+            eseq 
+              seq 
+                sxp
+                  eseq
+                    sxp
+                      call
+                        name print
+                        call
+                          name string_of_int
+                          temp t1                          
+                        call end                        
+                      call end
+                    const 0                  
+                sxp
+                  eseq
+                    move
+                      temp t1
+                      binop
+                      mul                      
+                      const 2                      
+                      temp t1                      
+                    temp t1                  
+              seq end
+              eseq
+                seq
+                  label L7
+                  cjump
+                    ne
+                    eseq
+                      seq
+                        cjump
+                          gt
+                          temp t1                          
+                          const 53                          
+                          name L10
+                          name L11
+                        label L10
+                        move
+                        temp t3
+                        const 1
+                        jump name L12
+                        label L11
+                        move
+                        temp t3
+                        const 0
+                        label L12
+                      seq end
+                      temp t3
+                    
+                    const 0
+                    name L8
+                    name L9
+                  label L8
+                  sxp
+                    eseq 
+                      sxp
+                        eseq
+                          sxp
+                            call
+                              name print
+                              call
+                                name string_of_int
+                                temp t1                                
+                              call end                              
+                            call end
+                          const 0                        
+                      eseq
+                        move
+                          temp t1
+                          binop
+                          sub                          
+                          temp t1                          
+                          const 3                          
+                        temp t1                    
+                  jump name L7
+                  label L9
+                seq end
+                const 0            
+          jump name L1
+          label L3
+        seq end
+        const 0      
+    temp t1
+label end

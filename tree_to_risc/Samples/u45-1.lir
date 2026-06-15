@@ -1,0 +1,9 @@
+label L_str_0
+ "Ceci est une chaine"
+label main
+move temp t0 name L_str_0 
+sxp
+  call name print int temp t0 call end
+sxp
+  const 0
+label end

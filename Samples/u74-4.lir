@@ -1,0 +1,53 @@
+label L_str_0
+ "true"
+label L_str_1
+ "false"
+label L1
+move temp t0 temp i0 
+move temp t4 call name L4 int temp t0 call end 
+move temp t5 temp t4 
+move temp t6 call name L2 int temp t5 call end 
+move temp t7 temp t6 
+move temp rv call name L4 int temp t7 call end 
+label end
+label L2
+cjump lt temp i0 const 74 name L8 name L11 
+label L11
+jump name L9 
+label L8
+move temp t3 const 1 
+jump name L10 
+label L9
+move temp t3 const 0 
+label L10
+cjump eq temp t3 const 0 name L6 name L5 
+label L5
+move temp t2 binop mul const 2 temp i0 
+jump name L7 
+label L6
+move temp t2 temp i0 
+label L7
+move temp t1 temp t2 
+move temp rv temp t1 
+label end
+label L3
+move temp t8 temp i0 
+move temp t9 call name L2 int temp t8 call end 
+move temp t10 temp t9 
+move temp rv call name L2 int temp t10 call end 
+label end
+label L4
+move temp t11 temp i0 
+move temp t12 call name L2 int temp t11 call end 
+move temp t13 temp t12 
+move temp t14 temp i0 
+move temp t15 temp i0 
+move temp t16 call name L3 int temp t14 int temp t15 call end 
+move temp t17 temp t16 
+move temp rv call name L3 int temp t13 int temp t17 call end 
+label end
+label main
+move temp t18 const 74 
+sxp
+  call name L1 int temp t18 call end
+label end

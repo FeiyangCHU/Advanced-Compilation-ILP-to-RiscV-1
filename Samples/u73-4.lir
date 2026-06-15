@@ -1,0 +1,29 @@
+label L_str_0
+ "true"
+label L_str_1
+ "false"
+label L1
+move temp t1 binop mul const 2 temp i0 
+move temp rv temp t1 
+label end
+label L2
+move temp t0 temp i0 
+move temp t2 call name L1 int temp t0 call end 
+move temp t3 temp t2 
+move temp rv call name L1 int temp t3 call end 
+label end
+label L3
+move temp t4 temp i0 
+move temp t5 call name L1 int temp t4 call end 
+move temp t6 temp t5 
+move temp t7 temp i0 
+move temp t8 temp i0 
+move temp t9 call name L2 int temp t7 int temp t8 call end 
+move temp t10 temp t9 
+move temp rv call name L2 int temp t6 int temp t10 call end 
+label end
+label main
+move temp t11 const 73 
+sxp
+  call name L3 int temp t11 call end
+label end

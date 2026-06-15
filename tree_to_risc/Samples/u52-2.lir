@@ -1,0 +1,26 @@
+label main
+move temp t1 const 50 
+label L1
+cjump lt temp t1 const 52 name L4 name L7 
+label L7
+jump name L5 
+label L4
+move temp t2 const 1 
+jump name L6 
+label L5
+move temp t2 const 0 
+label L6
+cjump ne temp t2 const 0 name L2 name L8 
+label L8
+jump name L3 
+label L2
+move temp t1 binop add temp t1 const 1 
+sxp
+  temp t1
+jump name L1 
+label L3
+sxp
+  const 0
+sxp
+  temp t1
+label end

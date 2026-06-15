@@ -1,0 +1,33 @@
+label L_str_0
+ "coucou"
+label L_str_2
+ "true"
+label L_str_3
+ "false"
+label L_str_1
+ "STRING"
+label main
+move temp t1 const 1 
+sxp
+  temp t1
+move temp t3 const 1 
+cjump eq temp t3 const 0 name L2 name L1 
+label L1
+move temp t0 temp t1 
+move temp t5 call name string_of_int int temp t0 call end 
+move temp t6 temp t5 
+move temp t7 name L_str_0 
+sxp
+  call name concat int temp t6 int temp t7 call end
+move temp t4 name L_str_1 
+move temp t2 temp t4 
+jump name L3 
+label L2
+move temp t2 constF 1.5 
+label L3
+move temp t8 temp t2 
+sxp
+  call name print int temp t8 call end
+sxp
+  const 0
+label end

@@ -1,0 +1,10 @@
+label L_str_0
+ "hello"
+label main
+move temp t1 const 1 
+move temp t2 name L_str_0 
+sxp
+  temp t2
+sxp
+  temp t2
+label end

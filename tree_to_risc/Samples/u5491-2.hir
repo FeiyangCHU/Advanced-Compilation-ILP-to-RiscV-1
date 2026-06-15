@@ -1,0 +1,28 @@
+/* == High Level Intermediate representation. == */
+/* String Litterals */
+
+/* Function Definitions */
+/* function : f__int */
+# Routine: L1
+label L1
+  # Body
+  move
+  temp rv
+  binop
+  div  
+  temp i0  
+  const 3  label end
+  
+  
+  /* Main */
+  # Routine main
+  label main
+  sxp
+    call
+      name L1
+      binop
+      mul      
+      const 3      
+      const 5491      
+    call end  
+label end

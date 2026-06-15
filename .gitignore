@@ -1,0 +1,41 @@
+/.metadata/
+ilp_to_tree/.metadata/
+ilp_to_tree/target/
+*.zip
+# VS Code
+.vscode/
+
+# Java build
+target/
+build/
+out/
+bin/
+
+# Java class/jar
+*.class
+*.jar
+*.war
+*.ear
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Eclipse
+.metadata/
+ilp_to_tree/.project
+
+# IntelliJ
+.idea/
+*.iml
+
+.settings/
+.project
+.classpath
+.factorypath
+# Generated compiler outputs
+Samples/*.hir
+Samples/*.resolved
